@@ -1,6 +1,6 @@
 # TypeChecksandCastsKotlin
 
-In kotlin you can use the 'is' operator to determine the specific datatype of an object.
+In kotlin you can use the `is` operator to determine the specific datatype of an object.
 
 ```kotlin
 if(obj !is String){
