@@ -18,7 +18,7 @@ In the above example we are checking whether or not the given obj is not a strin
 
 In kotlin you don't always have to use explicit cast operators, because the compiler checks the is and checks for immutable values and automatically casts. This can also be used for when and while loops.
 
-```
+```kotlin
 when (obj) {
         is Int -> println("This Integer is over " + (obj-1))
         is String -> println("This is what my doormat  says: " + obj)
