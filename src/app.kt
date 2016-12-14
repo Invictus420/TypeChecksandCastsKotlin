@@ -42,6 +42,10 @@ fun typechecker(obj: Any){
         }
         return println("This '$x' is not a string" )
     }
+
+    if(obj is String || obj.length > 2){ //obj is automatically cast to String
+        println(obj.length+3)
+    }
 }
 
 fun unsafecast(obj: Any){
