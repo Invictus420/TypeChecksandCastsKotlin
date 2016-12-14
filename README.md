@@ -16,7 +16,15 @@ In the above example we are checking whether or not the given obj is not a strin
 
 ##Smart Casts
 
-In kotlin you don't always have to use explicit cast operators, because the compiler checks the is and checks for immutable values and automatically casts. This can also be used for when and while loops.
+In kotlin you don't always have to use explicit cast operators, because the compiler checks the is and checks for immutable values and automatically casts.
+
+```kotlin
+if(obj is String || obj.length > 2){ //obj is automatically cast to String
+        println(obj.length+3)
+    }
+```
+
+This can also be used for when and while loops.
 
 ```kotlin
 when (obj) {
